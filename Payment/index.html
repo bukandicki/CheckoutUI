@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+	<div class="suggestion small w-100 bg-success text-center text-light sticky-top py-1">NOTICE : Dengan login, Kamu bisa loh isi otomatis formnya <i class="em em-sunglasses" aria-role="presentation" aria-label="WINK"></i></div>
+	<div class="payment container p-0 d-flex justify-content-center">
+		<div class="payment-wrapper pt-5 mb-5">
+			<div class="payment-header mx-5 mb-5 text-center">
+				<h1>Checkout</h1>
+				<hr>
+			</div>
+			<div class="payment-body mx-5">
+
+				<div class="address mb-5">
+					<p class="payment-title mb-4"><i class="fas fa-map"></i> My Address</p>
+					<div class="row m-auto">
+						<div class="col-xl-8 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mb-2 mt-4">
+								<input type="text" class="input-recipient w-100 p-2 px-2" id="name" name="" value="">
+								<label for="" class="label-input-recipient">Nama penerima</label>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mb-2 mt-4">
+								<input type="tel" class="input-recipient w-100 p-2 px-2" id="notel" name="" value="">
+								<label for="" class="label-input-recipient">No telepon</label>
+							</div>
+						</div>
+						<div class="col-xl-12 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mt-4">
+								<input type="email" class="input-recipient w-100 p-2 px-2" id="notel" name="" value="" placeholder="(opsional)">
+								<label for="" class="label-input-recipient">Email</label>
+							</div>
+						</div>
+						<div class="col-xl-12 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mt-4">
+								<input type="text" class="input-recipient w-100 p-2 px-2" id="notel" name="" value="">
+								<label for="" class="label-input-recipient">Alamat lengkap</label>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mt-4">
+								<select name="" id="" class="w-100 p-2">
+									<option value="">Provinsi</option>
+									<option value="">Jawa Barat</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mt-4">
+								<select name="" id="" class="w-100 p-2">
+									<option value="">Kota/Kabupaten</option>
+									<option value="">Kota Bandung</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-12 py-1 px-1 m-0">
+							<div class="form-group mt-4">
+								<select name="" id="" class="w-100 p-2">
+									<option value="">Kecamatan</option>
+									<option value="">Kiaracondong</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bank-payment mb-5">
+					<p class="payment-title mb-4"><i class="fas fa-credit-card"></i> Payment method</p>
+					<div class="row m-auto">
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-bri" name="bank" value="bank">
+							<label for="r-bri" class="bank-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/bri.png" alt="">
+							</label>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-bca" name="bank" value="bank">
+							<label for="r-bca" class="bank-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/bca.png" alt="">
+							</label>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-mandiri" name="bank" value="bank">
+							<label for="r-mandiri" class="bank-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/mandiri.png" alt="">
+							</label>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-bni" name="bank" value="bank">
+							<label for="r-bni" class="bank-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/bni.png" alt="">
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="shipping-type-payment mb-5">
+					<p class="payment-title mb-4"><i class="fas fa-truck"></i> Shipping option</p>
+					<div class="row m-auto">
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-jnt" name="shipping" value="shipping">
+							<label for="r-jnt" class="shipping-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/jnt.png" alt="">
+							</label>
+							<div class="shipping-price text-center mt-2">
+								Rp 10.859
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-sicepat" name="shipping" value="shipping">
+							<label for="r-sicepat" class="shipping-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/cepat.png" alt="">
+							</label>
+							<div class="shipping-price text-center mt-2">
+								Rp 17.942
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+						<input type="radio" id="r-ninja" name="shipping" value="shipping">
+							<label for="r-ninja" class="shipping-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/ninja.png" alt="">
+							</label>
+							<div class="shipping-price text-center mt-2">
+								Rp 10.743
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-6 py-1 px-1">
+							<input type="radio" id="r-pos" name="shipping" value="shipping">
+							<label for="r-pos" class="shipping-item d-flex justify-content-center align-items-center p-3">
+								<img src="assets/img/pos.png" alt="">
+							</label>
+							<div class="shipping-price text-center mt-2">
+								Rp 15.375
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="detail-order mb-5">
+					<p class="payment-title mb-4"><i class="fas fa-shopping-bag"></i> Detail order</p>
+					<div class="order">
+						<div class="order-item mb-2">
+							<div class="row m-auto">
+								<div class="col-xl-2 col-md-6 px-1">
+									<img src="assets/img/1.jpg" class="detail-order-img" alt="">
+								</div>
+								<div class="col-xl-7 col-md-6 p-0 pl-2">
+									<h6 class="m-0 mt-2 item-name">Sneakers Jordan 'Why Not?' Zer0.3 PF</h6>
+									<p class="m-0 item-info">(Green) | Ukuran 42</p>
+									<a class="btn-option-order ubah-order" href="#!">Ubah</a>
+									<a class="btn-option-order hapus-order" href="#!">Hapus</a>
+								</div>
+								<div class="col-xl-3 col-md-6 p-0">
+									<h6 class="m-0 mt-2 item-price">1 x Rp 1,979,000</h6>
+								</div>
+							</div>
+						</div>
+						<div class="order-item mb-2">
+							<div class="row m-auto">
+								<div class="col-xl-2 col-md-6 px-1">
+									<img src="assets/img/2.jpg" class="detail-order-img" alt="">
+								</div>
+								<div class="col-xl-7 col-md-6 p-0 pl-2">
+									<h6 class="m-0 mt-2 item-name">Sneakers Jordan React Havoc SE</h6>
+									<p class="m-0 item-info">(Metalic) | Ukuran 42</p>
+									<a class="btn-option-order ubah-order" href="#!">Ubah</a>
+									<a class="btn-option-order hapus-order" href="#!">Hapus</a>
+								</div>
+								<div class="col-xl-3 col-md-6 p-0">
+									<h6 class="m-0 mt-2 item-price">1 x Rp 1,778,000</h6>
+								</div>
+							</div>
+						</div>
+						<div class="order-item mb-2">
+							<div class="row m-auto">
+								<div class="col-xl-2 col-md-6 px-1">
+									<img src="assets/img/2.jpg" class="detail-order-img" alt="">
+								</div>
+								<div class="col-xl-7 col-md-6 p-0 pl-2">
+									<h6 class="m-0 mt-2 item-name">Sneakers Jordan React Havoc SE</h6>
+									<p class="m-0 item-info">(Metalic) | Ukuran 42</p>
+									<a class="btn-option-order ubah-order" href="#!">Ubah</a>
+									<a class="btn-option-order hapus-order" href="#!">Hapus</a>
+								</div>
+								<div class="col-xl-3 col-md-6 p-0">
+									<h6 class="m-0 mt-2 item-price">1 x Rp 1,778,000</h6>
+								</div>
+							</div>
+						</div>
+						<div class="order-item mb-2">
+							<div class="row m-auto">
+								<div class="col-xl-2 col-md-6 px-1">
+									<img src="assets/img/2.jpg" class="detail-order-img" alt="">
+								</div>
+								<div class="col-xl-7 col-md-6 p-0 pl-2">
+									<h6 class="m-0 mt-2 item-name">Sneakers Jordan React Havoc SE</h6>
+									<p class="m-0 item-info">(Metalic) | Ukuran 42</p>
+									<a class="btn-option-order ubah-order" href="#!">Ubah</a>
+									<a class="btn-option-order hapus-order" href="#!">Hapus</a>
+								</div>
+								<div class="col-xl-3 col-md-6 p-0">
+									<h6 class="m-0 mt-2 item-price">1 x Rp 1,778,000</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr class="mb-5">
+
+				<div class="cashier">
+					<div class="voucher mb-5">
+						<div class="row m-auto">
+							<div class="col-xl-9 col-md-12 px-2 mb-1">
+								<div class="form-group m-0">
+									<input type="text" class="input-recipient w-100 p-2 px-3 rounded-pill" id="voucher" name="" value="" placeholder="INSERT VOUCHER CODE">
+								</div>
+							</div>
+							<div class="col-xl-3 col-md-12 px-2 mb-1">
+								<button class="btn-voucher p-2 px-2 w-100 rounded-pill">Check Voucher</button>
+							</div>
+						</div>
+					</div>
+					<div class="item-total-price mb-5">
+						<div class="row m-auto">
+							<div class="col-xl-6 col-md-12">
+								<p class="small m-0">Voucher : <b class="text-ongkir">ONGKIRMURAH</b></p>
+								<p class="small m-0">Discount : -</p>
+								<p class="small m-0">Ongkir : 1.743 <span class="text-danger">(-11425)</span></p>
+							</div>
+							<div class="col-xl-6 col-md-12 text-right">
+								<h5 class="m-0 item-price">Total Price</h5>
+								<h5 class="m-0 total-item-price">Rp 3,767,743</h5>
+							</div>
+						</div>
+					</div>
+					<hr class="mb-5">
+				</div>
+			</div>
+			<div class="payment-footer text-center mt-5">
+				<a href="#!" class="w-100 payment-button d-inline-block p-3">Confirm Payment</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/lib/js/emojione.min.js" type="text/javascript"></script>
+  	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="assets/js/master.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap');
+
+* {
+	font-family: "Nunito", sans-serif;
+	color: #5b7987;
+	box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+	outline: none;
+}
+input[type="text"], input[type="email"], input[type="tel"], select {
+	border: solid 1px rgba(91, 121, 135, .4) !important;
+}
+
+button:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+body {
+	background: #f8f8f8;
+}
+
+button.confirm {
+	text-transform: capitalize;
+	background: #64b5f6 !important;
+	color: #fff;
+}
+
+.payment-wrapper {
+	width: 65%;
+	margin-top: 4em;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.03), 
+                0 2px 4px rgba(0,0,0,0.03), 
+                0 4px 8px rgba(0,0,0,0.03), 
+                0 8px 16px rgba(0,0,0,0.03),
+                0 16px 32px rgba(0,0,0,0.03), 
+                0 32px 64px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+.payment-header {
+}
+
+.payment-body {
+
+}
+
+.payment-title {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.bank-item, .shipping-item {
+	width: 100%;
+	border: solid 2.3px #f2f2f2;
+	cursor: pointer;
+	transition: all ease 250ms;
+}
+
+.bank-item img, .shipping-item img{
+	width: 80%;
+	filter: grayscale(100%);
+	transition: all ease 250ms;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]:checked + label {
+    /*transform: scale(1.025);*/
+	border: solid 2.3px #aceef4;
+}
+
+.shipping-price {
+    font-weight: 800;
+}
+
+input[type="radio"]:checked + label img {
+	/*display: none;*/
+	filter: grayscale(0%);
+}
+
+.shipping-item:hover > img, .bank-item:hover > img {
+	filter: grayscale(0%);
+}
+
+.shipping-price {
+	font-size: .65em;
+}
+
+.payment-button {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: .9em;
+	background: rgba(100, 181, 246, .7);
+	transition: all ease 700ms;
+}
+
+.payment-button:hover {
+	text-decoration: none;
+	background: rgba(100, 181, 246, 1);
+	color: #fff;
+}
+
+.form-group {
+	position: relative;
+}
+
+.form-group input[type="text"] {
+	text-transform: capitalize;
+}
+
+.input-recipient + .label-input-recipient  {
+  position: absolute;
+  top: -27px;
+  left: 0px;
+  transition: all 250ms ease;
+  pointer-events: none;
+  color: rgba(0,0,0, .4);
+  background: #fff;
+  padding: 0 5px 0 5px;
+}
+
+.input-recipient:focus + .label-input-recipient ,
+.input-recipient + .label-small {
+  /*font-size: 0.75em;*/
+  font-weight: 400;
+  color: rgba(100, 181, 246, 1);
+  /*transform: translateY(-1.3em);*/
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;  /* Add custom arrow */
+}
+
+textarea { resize: none; }
+
+.detail-order-img {
+	width: 100px;
+}
+
+.order {
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.item-info {
+	color: #b3b3b3;
+	font-size: .7em;
+}
+
+.btn-option-order {
+	padding: .5em;
+	height: 2em;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 12px;
+	margin: .3em 0em 0 .3em;
+	font-size: .7em;
+	/*transition: all ease 500ms;*/
+}
+
+.ubah-order {
+	color: rgba(100, 181, 246, 1);
+	border: solid 1px rgba(100, 181, 246, 1);
+}
+
+.hapus-order {
+	color: rgba(246, 100, 100, 1);
+	border: solid 1px rgba(246, 100, 100, 1) !important;
+}
+
+.ubah-order:hover {
+	color: #fff;
+	background: rgba(100, 181, 246, 1);
+}
+
+.hapus-order:hover {
+	color: #fff;
+	background: rgba(246, 100, 100, 1);
+}
+
+
+hr {
+	border-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23C1C1C1FF' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+	border-image-width: 1;
+	border-image-slice: 2; 
+	border-image-repeat: round;
+}
+
+.text-ongkir {
+	color: rgba(100, 181, 246, 1);
+}
+
+.total-item-price {
+	font-weight: 800 !important;
+}
+
+.btn-voucher {
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	font-size: .9em;
+	background: rgba(100, 181, 246, .7);
+	transition: all ease 700ms;
+}
+
+.btn-voucher:hover {
+	text-decoration: none;
+	background: rgba(100, 181, 246, 1);
+	color: #fff;
+}
